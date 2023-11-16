@@ -1,0 +1,130 @@
+body {
+  background-color: #242323;
+  color: white;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.again {
+  margin-left: 25%;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 70%;
+  color: white;
+  background-color: transparent;
+  border-color: white;
+}
+
+.para {
+  text-align: center;
+}
+.para:hover {
+  animation-name: para;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+@keyframes para {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.secretNumber {
+  text-align: center;
+  border-color: white;
+  border-style: solid;
+  margin: 0% 45% 0% 45%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Medium {
+  text-align: center;
+}
+
+.Number {
+  background-color: rgb(156, 154, 154);
+  border-color: white;
+  color: black;
+  border-radius: 5px;
+  font-size: medium;
+  font-family: inherit;
+  text-align: center;
+}
+
+.check {
+  color: white;
+  font-size: 70%;
+  font-family: inherit;
+  margin-top: 10px;
+  padding: 10px;
+  margin-left: 25%;
+  background-color: transparent;
+  border-color: white;
+}
+
+.Foot {
+  display: flex;
+  justify-content: space-evenly;
+}
+.scoreNumber {
+  background-color: transparent;
+  border: transparent;
+  color: white;
+}
+.highScoreNumber {
+  background-color: transparent;
+  border: transparent;
+}
+
+.About {
+  background-color: rgb(156, 154, 154);
+  border-color: white;
+  color: rgb(49, 49, 49);
+  border-radius: 5px;
+  font-size: medium;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+@media only screen and (max-width: 450px) {
+  body {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .About {
+    font-size: small;
+  }
+  .check {
+    margin-left: 40%;
+  }
+  .again {
+    transform: translate(20%, 30%);
+  }
+  .secretNumber {
+    width: 50px;
+  }
+  .para {
+    font-size: small;
+  }
+  .Number {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .again {
+    transform: translate(12%, 30%);
+  }
+  .para {
+    font-size: 11px;
+  }
+  .secretNumber {
+    margin: 0% 40% 0% 42%;
+  }
+}
